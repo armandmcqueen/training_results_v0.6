@@ -27,3 +27,4 @@ DGXNSOCKET=2
 DGXHT=2         # HT is on is 2, HT off is 1
 DGXIBDEVICES=''
 BIND_LAUNCH=1
+DATADIR=~/data
