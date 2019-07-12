@@ -145,9 +145,7 @@ def mlperf_submission_log(benchmark):
     num_network_cards = query(
         'lspci | grep Infiniband | grep Mellanox | wc -l'
         )
-    mofed_version = query(
-        'cat /sys/module/mlx5_core/version'
-        )
+    mofed_version = ""
     interconnect = get_interconnect()
 
     cpu = f'{cpu_numa_nodes}x {cpu_model_name}'
