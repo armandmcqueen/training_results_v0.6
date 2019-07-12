@@ -35,6 +35,7 @@ Steps required to launch single node training on NVIDIA DGX-1:
 
 ```
 docker build --pull -t mlperf-nvidia:object_detection .
+DATADIR=~/data LOGDIR=~/training_results_v0.6/NVIDIA/benchmarks/maskrcnn/implementations/pytorch PULL=0 DGXSYSTEM=DGX1 ./run.sub
 DATADIR=<path/to/data/dir> LOGDIR=<path/to/output/dir> PULL=0 DGXSYSTEM=DGX1 ./run.sub
 ```
 ### NVIDIA DGX-2 (single node)

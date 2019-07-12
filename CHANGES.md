@@ -18,7 +18,6 @@ wget https://dl.fbaipublicfiles.com/detectron/ImageNetPretrained/MSRA/R-50.pkl
 
 The instruction `./caffe2/extract_dataset.sh` refers to a script that doesn't exist.
 
-Change the data volume location by changing `$DATADIR` in `config_DGX1.sh`.
-
+Trying training with the standard COCO layout we use in github.com/armandmcqueen/tensorpack-mask-rcnn
 
 
