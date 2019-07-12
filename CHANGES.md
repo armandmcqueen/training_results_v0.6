@@ -18,12 +18,11 @@ wget https://dl.fbaipublicfiles.com/detectron/ImageNetPretrained/MSRA/R-50.pkl
 
 The instruction `./caffe2/extract_dataset.sh` refers to a script that doesn't exist.
 
-Trying training with the standard COCO layout we use in github.com/armandmcqueen/tensorpack-mask-rcnn.
-
+Added `download_dataset_improved.sh` to download the data correctly (you want COCO 2017).
 Plus putting `R50.pkl` that we downloaded into a `models/` folder 
 
 ```
-~/data/
+~/coco/
     train2017/
     val2017/
     annotations/
@@ -31,6 +30,5 @@ Plus putting `R50.pkl` that we downloaded into a `models/` folder
 ```
 
 
-Plus putting `R50.pkl` that we downloaded into a `models/` folder 
-
+Change `run.sub` to add the coco volume under `/coco` instead of `/data`
 
